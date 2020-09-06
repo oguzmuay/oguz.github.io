@@ -1,0 +1,60 @@
+body
+{
+	height: 100vh;
+	line-height: 1.6;
+	overflow: hidden;
+}
+.container
+{
+	height: 100%;
+	width: 100%;
+	overflow-y: scroll;
+	scroll-behavior: smooth;
+	scroll-snap-type: y mandatory;
+}
+#NavigationBar
+{
+	position: fixed;
+	z-index: 1;
+	top: 0;
+	background-color: rgba(0,0,0,.5);
+	width: 100%;
+	height: 10%;
+	min-height: 25px;
+	display: flex;
+	flex-direction: left;
+	color: white;
+	text-align: center;
+}
+#NavigationBar ul
+{
+	margin-top: -.1vw;
+	display: flex;
+	width: 100%;
+	height: 100%;
+	justify-content: center;
+	list-style: none;
+}
+#NavigationBar ul li
+{
+	color: black;
+	margin: 2.5vh 5vw;
+	font-size:calc(2px + 3vw);
+	font-family: 'Grandstander', cursive;
+}
+section
+{
+	font-family: 'Grandstander', cursive;
+	height: 100vh;
+	width: 100%;
+	text-align: center;
+	align-items: center;
+	justify-content: center;
+	display: flex;
+	flex-direction: column;
+	scroll-snap-align: center;
+	background-color: grey;
+	border-style: solid;
+	border-width: 3px;
+	border-color: black;
+}
