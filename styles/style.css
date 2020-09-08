@@ -1,8 +1,13 @@
 body
 {
+	font-family: 'Press Start 2P', cursive;
 	height: 100vh;
 	line-height: 1.6;
 	overflow: hidden;
+}
+a
+{
+	color: white;
 }
 .container
 {
@@ -17,14 +22,13 @@ body
 	position: fixed;
 	z-index: 1;
 	top: 0;
-	background-color: rgba(0,0,0,.5);
+	background-color: rgba(0,0,0);
 	width: 100%;
-	height: 10%;
-	min-height: 25px;
+	height: 3vw;
 	display: flex;
-	flex-direction: left;
+	flex-direction: column;
 	color: white;
-	text-align: center;
+	text-align: right;
 }
 #NavigationBar ul
 {
@@ -32,29 +36,26 @@ body
 	display: flex;
 	width: 100%;
 	height: 100%;
-	justify-content: center;
-	list-style: none;
+	justify-content: left;
 }
 #NavigationBar ul li
 {
+	margin-top: .7vw;
+	margin-left: 1vw;
+	font-size:calc(2px + 1vw);
 	color: black;
-	margin: 2.5vh 5vw;
-	font-size:calc(2px + 3vw);
-	font-family: 'Grandstander', cursive;
 }
 section
 {
-	font-family: 'Grandstander', cursive;
 	height: 100vh;
 	width: 100%;
+	font-size: 10vw;
 	text-align: center;
 	align-items: center;
 	justify-content: center;
 	display: flex;
 	flex-direction: column;
 	scroll-snap-align: center;
-	background-color: grey;
-	border-style: solid;
-	border-width: 3px;
-	border-color: black;
+	background-color: black;
+	color: white;
 }

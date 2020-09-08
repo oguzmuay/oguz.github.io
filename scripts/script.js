@@ -1,6 +1,18 @@
-function changeColor()
-{
-    window.scrollTo(0,10);
-    console.log("naber");
+let navButtons = document.querySelectorAll(".navButton");
+for (let i = 0; i < navButtons.length; i++) {
+    navButtons[i].addEventListener("click",drawUnderLine);
 }
-document.getElementById("home").addEventListener("click",changeColor);
+navButtons[0].style.textDecoration = "underline";
+function drawUnderLine()
+{
+    navButtons.forEach(element => {
+        if(element==this)
+        {
+            element.style.textDecoration = "underline"; 
+        }else
+        {
+            element.style.textDecoration = "none";
+        }
+    }
+    );
+}
