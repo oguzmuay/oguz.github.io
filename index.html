@@ -5,6 +5,8 @@
 	<link rel="stylesheet" type="text/css" href="styles/normalize.css">
 	<link rel="stylesheet" type="text/css" href="styles/newstyle.css">
 	<link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
+	<script src="https://kit.fontawesome.com/a076d05399.js"></script>
+	<audio id="audio"><source src="audios/click.wav" type="audio/wav" /></audio>
 </head>
 <body>
 	<div class="container">
@@ -14,25 +16,33 @@
 				<li><a class="navButton" id="Aboutme" href="#">AboutMe</a></li>
 				<li><a class="navButton" id="Projects" href="#">Projects</a></li>
 				<li><a class="navButton" id="Videos" href="#">Videos</a></li>
-				<li><a class="navButton" id="Contact" href="#">Contact</a></li>
 			</ul>
 		</nav>
 	<section id=home>
-		<span id="text">C:\Oguz Ugurdogan<span id="selector">|</span></span>
+		<span id="text"><span id="selector">|</span></span>
 	</section>
 	<section id=aboutme>
 		<span id="text">Kilasik Ben<span id="selector">|</span></span>
 	</section>
-		<section id=projects>
-			<span id="text">Inatorlerim<span id="selector">|</span></span>
+	<section id=projects>
+		<span id="text">Inatorlerim<span id="selector">|</span></span>
 	</section>
-		<section id=videos>
-			<span id="text">Hareketli fotolarim<span id="selector">|</span></span>
+	<section id=videos>
+		<span id="text">Hareketli fotolarim<span id="selector">|</span></span>
 	</section>
-		<section id=contact>
-			<span id="text">Ara beni<span id="selector">|</span></span>
-	</section>
-	<footer id="socialmedia"></footer>
+	<div id="Terminal">
+		<span id="terminalCloseButton"><i class="fas fa-angle-double-down"></i></span>
+		<div id="terminalTextArea"></div>
+		<input id="terminalInputArea" type="text">
+	</div>
+	<footer id="socialmedia">
+		<a id ="icon"href="https://www.linkedin.com/in/oğuz-uğurdoğan-0665701a8/" target="_blank" title="LinkedIn" alt="LinkedIn"><i class="fab fa-linkedin"></i></a>
+		<a id ="icon"href="https://www.instagram.com/oguzugurdogan/" target="_blank" title="Instagram" alt="Instagram"><i class="fab fa-instagram"></i></a>
+		<a id ="icon"href="https://www.youtube.com/expcalibur735" target="_blank" title="Youtube" alt="Youtube"><i class="fab fa-youtube"></i></a>
+		<a id ="icon"href="https://github.com/oguzmuay" target="_blank" title="Git-Hub" alt="GitHub"><i class="fas fa-code-branch"></i></a>
+		<a id ="icon"href="https://www.linkedin.com/in/oğuz-uğurdoğan-0665701a8/" target="_blank" title="Steam" alt="Steam"><i class="fab fa-steam"></i></a>
+		<a id="terminalOpenButton"><i class="fas fa-angle-double-up"></i></a>
+	</footer>
 	</div>
 	<script src="scripts/script.js"></script>
 </body>
