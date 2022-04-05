@@ -1,210 +1,198 @@
-body
-{
-	font-family: 'VT323', monospace;
-	height: 100vh;
-	line-height: 1.6;
-	//overflow: hidden;
-	background: rgb(0,0,0);
-	text-shadow: 0 0 10px green;
-	color: green;
-	#selector
-	{
-		animation-name: selectorAnim;
-		animation-duration: 1s;
-		animation-iteration-count: infinite;
-	}
+body {
+  font-family: "VT323", monospace;
+  height: 100vh;
+  line-height: 1.6;
+  //overflow: hidden;
+  background: rgb(0, 0, 0);
+  text-shadow: 0 0 10px green;
+  color: green;
+  #selector {
+    animation-name: selectorAnim;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+  }
 }
-@keyframes selectorAnim
-{
-	0%{color: rgba(green,1);}
-	100%{color: rgba(green,0);}
+@keyframes selectorAnim {
+  0% {
+    color: rgba(green, 1);
+  }
+  100% {
+    color: rgba(green, 0);
+  }
 }
-a
-{
-	color: green;
+a {
+  color: green;
 }
-.container
-{
-	height: 100%;
-	width: 100%;
+.container {
+  height: 100%;
+  width: 100%;
 }
-#NavigationBar ul
-{
-	margin-top: -.1vw;
-	display: flex;
-	width: 100%;
-	height: 100%;
-	justify-content: left;
+#NavigationBar ul {
+  margin-top: -0.1vw;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  justify-content: left;
 }
-@media screen and (orientation:portrait)
-{
-	#NavigationBar
-	{
-		position: fixed;
-		z-index: 1;
-		top: 0;
-		background-color: rgba($color: #000000, $alpha: 0.0);
-		width: 100%;
-		height: 6vw;
-		display: flex;
-		flex-direction: column;
-		text-align: right;
-		ul
-		{
-			li
-			{
-				margin: .1vw auto;
-				font-size:calc(2px + 5vw);
-				color: black;
-			}
-		}
-	}
-	#terminalOpenButton
-	{
-		display: none;
-	}
-	#socialmedia 
-	{
-		justify-content: center;
-		text-align: center;
-		position: fixed;
-		width: 100%;
-		height: 6vw;
-		background-color: rgba(black, 0);
-		z-index: 1;
-		font-size:calc(2px + 6vw);
-		bottom: 2.5vw;
-		#icon
-		{
-			margin-left: 5vw;
-			color: green;
-		}
-	}
-}	
-@media screen and (orientation:landscape)
-{
-	#NavigationBar
-	{
-		position: fixed;
-		z-index: 1;
-		top: 0;
-		background-color: rgba($color: #000000, $alpha: 0.0);
-		width: 100%;
-		height: 3vw;
-		display: flex;
-		flex-direction: column;
-		text-align: right;
-		ul
-		{
-			li
-			{
-				margin-top: .1vw;
-				margin-left: 1vw;
-				font-size:calc(2px + 2vw);
-				color: black;
-			}
-		}
-	}
-	#socialmedia 
-	{
-		justify-content: center;
-		text-align: left;
-		position: fixed;
-		width: 100%;
-		height: 3vw;
-		background-color: rgba(black, 0);
-		z-index: 1;
-		font-size:calc(2px + 2vw);
-		bottom: 0;
-		#icon
-		{
-			margin-left: 1vw;
-			color: green;
-		}
-		#terminalOpenButton
-		{
-			cursor: pointer;
-			margin-left: 30.5vw;
-			font-size: calc(2px + 2vw);
-			animation-name: terminalOpen;
-			animation-duration: 1s;
-			animation-iteration-count: infinite;
-		}
-		@keyframes terminalOpen
-		{
-			0%{color: rgba(green,1);}
-			50%{color: rgba(green,0);}
-			100%{color: rgba(green,1);}
-		}
+@media screen and (orientation: portrait) {
+  #NavigationBar {
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    background-color: rgba($color: #000000, $alpha: 0);
+    width: 100%;
+    height: 6vw;
+    display: flex;
+    //flex-direction: column;
+    text-align: right;
+    ul {
+      li {
+        margin: 0.1vw auto;
+        font-size: calc(2px + 5vw);
+        color: black;
+      }
+    }
+  }
+  #terminalOpenButton {
+    display: none;
+  }
+  #socialmedia {
+    justify-content: center;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    height: 6vw;
+    background-color: rgba(black, 0);
+    z-index: 1;
+    font-size: calc(2px + 6vw);
+    bottom: 2.5vw;
+    #icon {
+      margin-left: 5vw;
+      color: green;
+    }
+  }
 }
-}	
-section
-{
-
-	height: 100vh;
-	width: 100%;
-	font-size: 10vw;
-	text-align: center;
-	align-items: center;
-	justify-content: center;
-	display: flex;
-	flex-direction: column;
-	text-shadow: 0 0 40px green;
+@media screen and (orientation: landscape) {
+  #NavigationBar {
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    background-color: rgba($color: #000000, $alpha: 0);
+    width: 100%;
+    height: 3vw;
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+    ul {
+      li {
+        margin-top: 0.1vw;
+        margin-left: 1vw;
+        font-size: calc(2px + 2vw);
+        color: black;
+      }
+    }
+  }
+  #socialmedia {
+    justify-content: center;
+    text-align: left;
+    position: fixed;
+    width: 100%;
+    height: 3vw;
+    background-color: rgba(black, 0);
+    z-index: 1;
+    font-size: calc(2px + 2vw);
+    bottom: 0;
+    #icon {
+      margin-left: 1vw;
+      color: green;
+    }
+    #terminalOpenButton {
+      cursor: pointer;
+      margin-left: 30.5vw;
+      font-size: calc(2px + 2vw);
+      animation-name: terminalOpen;
+      animation-duration: 1s;
+      animation-iteration-count: infinite;
+    }
+    @keyframes terminalOpen {
+      0% {
+        color: rgba(green, 1);
+      }
+      50% {
+        color: rgba(green, 0);
+      }
+      100% {
+        color: rgba(green, 1);
+      }
+    }
+  }
 }
-section::after
-{
-	content: "";
-	position: absolute;
-	width: 80vw;
-	height: 80vh;
-	background: repeating-linear-gradient(
-		0deg,
-		rgba(black, 0.15),
-		rgba(black, 0.15) 1px,
-		transparent 1px,
-		transparent 2px
-	  );
+section {
+  height: 100vh;
+  width: 100%;
+  font-size: 10vw;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  text-shadow: 0 0 40px green;
+}
+section::after {
+  content: "";
+  position: absolute;
+  width: 80vw;
+  height: 80vh;
+  background: repeating-linear-gradient(
+    0deg,
+    rgba(black, 0.15),
+    rgba(black, 0.15) 1px,
+    transparent 1px,
+    transparent 2px
+  );
 }
 
-#Terminal
-{
-	background-color: black;
-	border-color: green;
-	border-width: 1px;
-	border-style: solid;
-	text-align: center;
-	justify-content: center;
-	top: 100vh;
-	width: 80vw;
-	height: 80vh;
-	position: fixed;
-	left: 10vw;
-	z-index: 2;
-	border-top-left-radius: 10px;
-	border-top-right-radius: 10px;
-	border-bottom-left-radius: 1%;
-	border-bottom-right-radius: 1%;
-	#terminalCloseButton
-	{
-		font-size:calc(2px + 2vw);
-		cursor: pointer;
-		animation-name: terminalOpen;
-		animation-duration: 1s;
-		animation-iteration-count: infinite;
-	}
-	#terminalTextArea
-	{
-		width: 80%;
-		height: 70%;
-		border-width: 1px;
-		border-color: white;
-		border-style: solid;
-		margin-left: 10%;
-	}
-	@keyframes terminalOpen
-	{
-		0%{color: rgba(green,1);}
-		50%{color: rgba(green,0);}
-		100%{color: rgba(green,1);}
-	}
+#Terminal {
+  background-color: black;
+  border-color: green;
+  border-width: 1px;
+  border-style: solid;
+  text-align: center;
+  justify-content: center;
+  top: 100vh;
+  width: 80vw;
+  height: 80vh;
+  position: fixed;
+  left: 10vw;
+  z-index: 2;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  border-bottom-left-radius: 1%;
+  border-bottom-right-radius: 1%;
+  #terminalCloseButton {
+    font-size: calc(2px + 2vw);
+    cursor: pointer;
+    animation-name: terminalOpen;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+  }
+  #terminalTextArea {
+    width: 80%;
+    height: 70%;
+    border-width: 1px;
+    border-color: white;
+    border-style: solid;
+    margin-left: 10%;
+  }
+  @keyframes terminalOpen {
+    0% {
+      color: rgba(green, 1);
+    }
+    50% {
+      color: rgba(green, 0);
+    }
+    100% {
+      color: rgba(green, 1);
+    }
+  }
 }
